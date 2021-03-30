@@ -1,0 +1,27 @@
+<view>
+  <view class="title">
+    个人信息
+  </view>
+  <view>
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="nameplace">
+        <input class="name" type="text" placeholder="请输入姓名" placeholder-class="placeclass" selection-start="30" />
+      </view>
+      <view class="banciplace">
+      <picker style="height:300rpx" value="{{weekval}}" range="{{week}}" bindchange="pickchange">
+          <view class="banci">
+            {{week[weekval]}}
+          </view>
+      </picker>
+    </view>
+    <view class="butplace">
+      <button class="submitbut" form-type="submit" plain="true">提交</button>
+      <button class="resetbut" form-type="reset" plain="true">重置</button>
+    </view>
+    </form>
+  </view>
+
+  <view>
+    <navigator class="backbut" url="/pages/first/first">返回</navigator>
+  </view>
+</view>

@@ -1,5 +1,4 @@
 {
-  "miniprogramRoot": "miniprogram/",
   "cloudfunctionRoot": "cloudfunctions/",
   "setting": {
     "urlCheck": true,
@@ -39,18 +38,15 @@
   },
   "appid": "wxb70653787138c00b",
   "projectname": "kaoqin",
-  "libVersion": "2.14.1",
+  "libVersion": "2.16.0",
   "condition": {
-    "search": {
-      "list": []
-    },
-    "conversation": {
-      "list": []
-    },
     "plugin": {
       "list": []
     },
     "game": {
+      "list": []
+    },
+    "gamePlugin": {
       "list": []
     },
     "miniprogram": {
@@ -58,7 +54,19 @@
         {
           "id": -1,
           "name": "db guide",
-          "pathName": "pages/databaseGuide/databaseGuide"
+          "pathName": "pages/databaseGuide/databaseGuide",
+          "query": ""
+        },
+        {
+          "name": "pages/kaoqin/kaoqin",
+          "pathName": "pages/kaoqin/kaoqin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "scene": null
         }
       ]
     }

@@ -1,0 +1,64 @@
+/* pages/my/my.wxss */
+page{
+  background: linear-gradient(to left, #4776E6, #8E54E9);
+}
+.title{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 180rpx;
+  line-height: 180rpx;
+  text-align: center;
+  font-size: 50rpx;
+}
+.banci{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black 4rpx solid;
+  width: 600rpx;
+  height: 100rpx;
+  margin-top: 30rpx;
+  text-align: center;
+  line-height: 100rpx;
+  font-size: 50rpx;
+  border-radius: 20rpx;
+}
+.name{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black 4rpx solid;
+  width: 600rpx;
+  height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  border-radius: 20rpx;
+}
+.xuanxiang{
+  width: 100%;
+  margin-left: 100rpx;
+  height: 300rpx;
+}
+.backbut{
+  display: block;
+  width: 100%;
+  text-align: center;
+  height: 100rpx;
+  font-size: 50rpx;
+  margin-top: 30rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.placeclass{
+  text-align: center;
+  font-size:35rpx;
+  color: #495057;
+}
+.submitbut{
+  width: 400rpx;
+}
+.resetbut{
+  width: 400rpx;
+  margin-top: 20rpx;
+}

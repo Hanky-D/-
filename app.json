@@ -1,0 +1,11 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/my/my",
+    "pages/help/help",
+    "pages/kaoqin/kaoqin",
+    "pages/qingjia/qingjia"
+  ],
+  "sitemapLocation": "sitemap.json"
+
+}
