@@ -1,5 +1,20 @@
 <view>
-  <view>
-    
+  <view class="timeplace">
+      <view class="title">{{month}}{{date}}</view>
+      <view class="title">{{weekday}}</view>
+  </view>
+  
+  <view class="butplace">
+    <button bindtap="qiandao" class="qiandao" plain="true">
+      签到
+    </button>
+    <button bindtap="qingjia" class="qiandao" style="margin-top:30rpx" plain="true">
+      请假
+    </button>
+    <view class="back">
+      <navigator url="/pages/first/first">
+        返回
+      </navigator>
+    </view>
   </view>
 </view>

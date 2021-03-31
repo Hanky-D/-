@@ -1,0 +1,15 @@
+<view>
+  <view class="tilplace">
+    <view class="title">
+    换班
+  </view>
+  </view>
+  <form bindsubmit="formSubmit">
+  <view class="nameplace">
+    <input type="text" class="bei" placeholder="请输入换班对方的名字" />
+  </view>
+  <view class="butplace" style="margin-top:300rpx">
+      <button class="submitbut" style="width:400rpx" form-type="submit" plain="true">确认</button>
+    </view>
+</form>
+</view>

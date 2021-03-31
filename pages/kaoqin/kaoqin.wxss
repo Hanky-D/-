@@ -1,1 +1,36 @@
 /* pages/kaoqin/kaoqin.wxss */
+page{
+  background: linear-gradient(to bottom, #1D976C, #93F9B9);
+}
+.qiandao{
+  width: 400rpx;
+  box-shadow: 2rpx 2rpx 10rpx black;
+}
+.butplace{
+  margin-top: 400rpx;
+}
+.back{
+  display: block;
+  width: 400rpx;
+  text-align: center;
+  height: 100rpx;
+  font-size: 50rpx;
+  margin-top: 50rpx;
+  margin-left: auto;
+  margin-right: auto;
+}
+.timeplace{
+  padding-top: 100rpx;
+  display: block;
+  width: 400rpx;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.title{
+  font-size: 8em;
+  padding: 0;
+  color: white;
+  font-size: 80rpx;
+  text-shadow: 0 0.1em 20rpx black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+}

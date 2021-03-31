@@ -2,48 +2,51 @@ wx.cloud.init()
 const db = wx.cloud.database()
 const app = getApp()
 Page({
+
   data: {
-    week:["周一","周二","周三","周四","周五"],
-    banci:["第一批","第二批"],
-    selweek:"周一",
-    selbanci:"第一批",
-    weekval:0,
-    bancival:[0],
+    name:"",
+    monthsarr:["一月","二月","三月","四月","五月","六月"
+                ,"七月","八月","九月","十月","十一月","十二月"
+                ],
+    weeksarr:["周一","周二","周三","周四","周五"],
+    month:"一月",
+    weekday:"周二",
+    date:""
   },
-  pickchange(e){
+  getData(){
+    var time = new Date()
+    var monthp = time.getMonth()
+    var datep = time.getDate().toString().concat("号")
+    var dayp = time.getDay()
+    console.log(monthp,datep)
     this.setData({
-      weekval:e.detail.value
+      month:this.data.monthsarr[time.getMonth()],
+      date:datep,
+      weekday:this.data.weeksarr[dayp-1]
     })
+    
   },
-  formReset(e){
-    this.setData({
-      weekval:0
-    })
-  },
-  formSubmit(e){
+  fromSubmit(e){
+  
     var opid = app.globalData.openid
+    var content = e.detail.value
     db.collection("userinfo").where({
       _openid:opid
     }).update({
       data:{
-        name:e.detail.value.username,
-        banci:this.data.week[e.detail.value.banci]
+        
       },
       success:res=>{
-        console.log("修改成功")
+        console.log("已换班")
         wx.showToast({
-          title:e.detail.value.username+" "+this.data.week[e.detail.value.banci],
+          title:"已与"+"",
           icon:'success',
           duration:2000
         })
         
       }
     })
-    
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
 
   },

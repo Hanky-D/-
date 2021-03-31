@@ -39,6 +39,7 @@
   "appid": "wxb70653787138c00b",
   "projectname": "kaoqin",
   "libVersion": "2.16.0",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "condition": {
     "plugin": {
       "list": []
@@ -66,6 +67,12 @@
         {
           "name": "pages/my/my",
           "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/qingjia/qingjia",
+          "pathName": "pages/qingjia/qingjia",
           "scene": null
         }
       ]

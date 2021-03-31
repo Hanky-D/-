@@ -1,2 +1,15 @@
 <!--pages/help/help.wxml-->
-<text>pages/help/help.wxml</text>
+<view class="text">
+  <view>
+    1.首次使用时，请先在“个人”登记姓名和值班时间
+  </view>
+  <view>
+    2.值班时，请到“考勤”，使用“签到”。
+  </view>
+  <view>
+    3.如需请假，请到“考勤”，使用“请假”。
+  </view>
+  <view>
+    4.如需与他人换班，使用“换班”，输入对方名字。
+  </view>
+</view>

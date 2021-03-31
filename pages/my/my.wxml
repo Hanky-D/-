@@ -5,10 +5,10 @@
   <view>
     <form bindsubmit="formSubmit" bindreset="formReset">
       <view class="nameplace">
-        <input class="name" type="text" placeholder="请输入姓名" placeholder-class="placeclass" selection-start="30" />
+        <input name="username" class="name" type="text" placeholder="请输入姓名" placeholder-class="placeclass" selection-start="30" />
       </view>
       <view class="banciplace">
-      <picker style="height:300rpx" value="{{weekval}}" range="{{week}}" bindchange="pickchange">
+      <picker name="banci" style="height:300rpx" value="{{weekval}}" range="{{week}}" bindchange="pickchange">
           <view class="banci">
             {{week[weekval]}}
           </view>

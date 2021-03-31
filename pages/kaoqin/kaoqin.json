@@ -1,6 +1,6 @@
 {
   "usingComponents": {},
   "navigationBarTitleText":"考勤",
-  "navigationBarBackgroundColor":"#fff",
-  "navigationBarTextStyle":"black"
+  "navigationBarBackgroundColor":"#000000",
+  "navigationBarTextStyle":"white"
 }

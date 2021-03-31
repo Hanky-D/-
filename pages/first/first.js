@@ -1,7 +1,7 @@
 // pages/kaoqin/kaoqin.js
 Page({
   data: {
-
+    
   },
   
   onLoad: function (options) {

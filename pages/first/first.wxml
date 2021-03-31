@@ -5,7 +5,7 @@
 
     <view class="buttext" style="margin-top:200rpx;">
         <navigator class="but" url="/pages/kaoqin/kaoqin">考勤</navigator>
-        <navigator class="but" url="/pages/qingjia/qingjia">请假</navigator>
+        <navigator class="but" url="/pages/huanban/huanban">换班</navigator>
     </view>
     <view class="buttext" style="margin-top:20rpx">
       <navigator class="but" url="/pages/my/my">个人</navigator>

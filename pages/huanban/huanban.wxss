@@ -1,0 +1,33 @@
+page{
+  background: linear-gradient(to bottom, #1FA2FF, #12D8FA, #A6FFCB);
+}
+.title{
+  font-size: 8em;
+  padding: 0;
+  color: white;
+  font-size: 80rpx;
+  text-shadow: 0 0.1em 20rpx black, 0.05em -0.03em 0 black, 0.05em 0.005em 0 black, 0em 0.08em 0 black, 0.05em 0.08em 0 black, 0px -0.03em 0 black, -0.03em -0.03em 0 black, -0.03em 0.08em 0 black, -0.03em 0 0 black;
+}
+.tilplace{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400rpx;
+  text-align:center;
+  margin-top: 100rpx;
+}
+.bei{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: black 4rpx solid;
+  width: 600rpx;
+  height: 100rpx;
+  text-align: center;
+  font-size: 50rpx;
+  border-radius: 20rpx;
+
+}
+.nameplace{
+  margin-top: 100rpx;
+}
