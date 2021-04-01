@@ -25,11 +25,16 @@ Page({
     })
     
   },
+  back(){
+    wx.navigateBack({
+      delta: 1,
+    })
+  },
   qiandao(){
     var content={"month":this.data.month,"date":this.data.date,"week":this.data.weekday}
     wx.showModal({
       title:"确认签到",
-      content:"DHJ"+" "+this.data.weekday,
+      content:this.data.weekday,
       success:res=>{
         if(res.confirm){
           var opid = app.globalData.openid
@@ -62,7 +67,7 @@ Page({
 
     wx.showModal({
       title:"确认请假",
-      content:"DHJ"+" "+this.data.weekday,
+      content:this.data.weekday,
       success:res=>{
         if(res.confirm){
           var opid = app.globalData.openid

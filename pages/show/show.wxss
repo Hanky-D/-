@@ -1,0 +1,21 @@
+page{
+  background-color: #e9ecef;
+}
+.title{
+  font-size: 60rpx;
+  text-align:center;
+}
+.info{
+  box-shadow: 2rpx 2rpx 5rpx black;
+  width: 700rpx;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30rpx;
+}
+.name{
+  font-size: 40rpx;
+  margin-left: 20rpx;
+}
+.kao{
+  display: inline;
+}

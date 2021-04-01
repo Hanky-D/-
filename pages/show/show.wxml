@@ -1,0 +1,31 @@
+<view>
+  <view class="title">
+    值班记录
+  </view>
+  <view class="info" wx:for="{{userinfo}}" wx:key="name">
+    <view class="content" >
+      <view class="name">
+        {{item.name}} 班次：{{item.banci}}
+      </view>
+      <view>
+        考勤情况：
+        <view class="kao" wx:for="{{item.kaoqin}}" wx:for-item="kaoqin" wx:key="kaoqin">
+          {{kaoqin.month}}{{kaoqin.date}}{{kaoqin.week}}  ,  
+        </view>
+        
+      </view>
+      <view> 
+        请假情况: 
+        <view class="kao" wx:for="{{item.qingjia}}" wx:for-item="qingjia" wx:key="kaoqin">
+          {{qingjia.month}}{{qingjia.date}}{{qingjia.week}}  ,  
+        </view>
+      </view>
+      <view>
+        换班情况:
+        <view class="kao" wx:for="{{item.huanban}}" wx:for-item="huanban" wx:key="kaoqin">
+            {{huanban}} , 
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

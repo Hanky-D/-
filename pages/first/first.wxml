@@ -1,6 +1,6 @@
 <view>
   <h1 class="picarea">
-    <view>真牛逼</view>
+    <view bindtap="chip">创管会</view>
   </h1>
 
     <view class="buttext" style="margin-top:200rpx;">
@@ -11,5 +11,13 @@
       <navigator class="but" url="/pages/my/my">个人</navigator>
       <navigator class="but" url="/pages/help/help">帮助</navigator>
     </view>
+
+    <mp-half-screen-dialog 
+  show="{{show}}"
+  maskClosable="{{false}}" >
+    <view slot="title">
+	          <input type="text" class="pwd" placeholder="input pwd" bindinput="haha" maxlength="11" />
+	  </view>
+  </mp-half-screen-dialog>
   </view>
 

@@ -4,8 +4,11 @@
     "pages/my/my",
     "pages/help/help",
     "pages/kaoqin/kaoqin",
-    "pages/huanban/huanban"
+    "pages/huanban/huanban",
+    "pages/show/show"
   ],
-  "sitemapLocation": "sitemap.json"
-
+  "sitemapLocation": "sitemap.json",
+  "useExtendedLib": {
+    "weui": true
+  }
 }

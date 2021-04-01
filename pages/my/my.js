@@ -10,6 +10,11 @@ Page({
     weekval:0,
     bancival:[0],
   },
+  back(){
+    wx.navigateBack({
+      delta: 1,
+    })
+  },
   pickchange(e){
     this.setData({
       weekval:e.detail.value

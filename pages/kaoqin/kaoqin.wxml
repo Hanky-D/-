@@ -11,10 +11,8 @@
     <button bindtap="qingjia" class="qiandao" style="margin-top:30rpx" plain="true">
       请假
     </button>
-    <view class="back">
-      <navigator url="/pages/first/first">
+    <view class="back" bindtap="back">
         返回
-      </navigator>
     </view>
   </view>
 </view>

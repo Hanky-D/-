@@ -3,6 +3,20 @@ page{
   background: linear-gradient(to bottom, #22c1c3, #fdbb2d);
 }
 .text{
-  font-size: 33rpx;
+  width: 700rpx;
   margin-top: 100rpx;
+  margin-left: 30rpx;
+}
+view{
+  margin-top: 10rpx;
+}
+.back{
+  display: block;
+  width: 400rpx;
+  text-align: center;
+  height: 100rpx;
+  font-size: 50rpx;
+  margin-top: 550rpx;
+  margin-left: auto;
+  margin-right: auto;
 }

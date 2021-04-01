@@ -21,7 +21,7 @@
     </form>
   </view>
 
-  <view>
-    <navigator class="backbut" url="/pages/first/first">返回</navigator>
+  <view class="backbut" bindtap="back">
+    返回
   </view>
 </view>

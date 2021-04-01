@@ -73,6 +73,12 @@
         {
           "name": "pages/qingjia/qingjia",
           "pathName": "pages/qingjia/qingjia",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/show/show",
+          "pathName": "pages/show/show",
           "scene": null
         }
       ]

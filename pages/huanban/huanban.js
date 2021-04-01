@@ -11,7 +11,14 @@ Page({
     weeksarr:["周一","周二","周三","周四","周五"],
     month:"一月",
     weekday:"周二",
-    date:""
+    date:"",
+    banci:"",
+    content:""
+  },
+  back(){
+    wx.navigateBack({
+      delta: 1,
+    })
   },
   getData(){
     var time = new Date()
@@ -24,27 +31,52 @@ Page({
       date:datep,
       weekday:this.data.weeksarr[dayp-1]
     })
+
+  },
+  formSubmit(e){
+    console.log(e.detail.value)
+    var na = e.detail.value.name
+    db.collection("userinfo").where({
+      name:na,
+      
+    }).get({
+      success:res=>{
+        console.log(res.data[0].banci,na)
+        this.setData({
+          banci:res.data[0].banci,
+        })
+        this.cal(na+res.data[0].banci,na,res.data[0].banci)
+      }
+    })
     
   },
-  fromSubmit(e){
-  
+  cal(content,na,banci){
+    const _ = db.command
     var opid = app.globalData.openid
-    var content = e.detail.value
+    console.log(content)
     db.collection("userinfo").where({
-      _openid:opid
+      _openid:opid,
+      
     }).update({
       data:{
-        
+        huanban:_.push(content)
       },
       success:res=>{
         console.log("已换班")
         wx.showToast({
-          title:"已与"+"",
+          title:"已与"+na+banci+"换班",
           icon:'success',
           duration:2000
         })
-        
+      },
+      fail:res=>{
+        wx.showToast({
+          title:"换班失败",
+          icon:'success',
+          duration:2000
+        })
       }
+
     })
   },
   onLoad: function (options) {

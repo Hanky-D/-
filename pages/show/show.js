@@ -1,27 +1,13 @@
-// pages/kaoqin/kaoqin.js
+// pages/show/show.js
+wx.cloud.init()
+const db = wx.cloud.database()
 Page({
+
   data: {
-    show:false,
-    
-  },
-  chip(){
-    this.setData({
-      show:true
-    })
-  },
-  haha(e){
-    if(e.detail.value == "20192005231" || e.detail.value == "13332827134")
-      {
-        wx.navigateTo({
-          url: '/pages/show/show',
-          success: (result) => {},
-          fail: (res) => {},
-          complete: (res) => {},
-        })
-      }
+    userinfo:[]
+
   },
   onLoad: function (options) {
-
   },
 
   /**
@@ -35,7 +21,29 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-
+    var temp=[]
+    db.collection("userinfo").get({
+      success:res=>{
+        console.log(res.data.length)
+        for (var i=0;i<res.data.length;i++){
+          temp.push(res.data[i])
+        }
+        this.setData({
+          userinfo:temp
+        })
+      }
+    })
+    db.collection("userinfo").skip(20).get({
+      success:res=>{
+        console.log(res.data.length)
+        for (var i=0;i<res.data.length;i++){
+          temp.push(res.data[i])
+        }
+        this.setData({
+          userinfo:temp
+        })
+      }
+    })
   },
 
   /**
